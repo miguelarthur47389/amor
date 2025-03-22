@@ -1,0 +1,55 @@
+body {
+    font-family: 'Georgia', serif; /* Fonte elegante */
+    background-color: #000; /* Fundo preto */
+    color: #fff; /* Texto branco */
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.carousel {
+    position: relative;
+    max-width: 100%; /* Largura máxima do carrossel */
+    height: auto; /* Altura automática para manter a proporção */
+    margin: 20px auto;
+    overflow: hidden; /* Esconde partes da imagem que saem do contêiner */
+    border-radius: 15px; /* Bordas arredondadas */
+}
+
+.carousel img {
+    width: 100%; /* Faz a imagem ocupar toda a largura do contêiner */
+    height: auto; /* Altura automática para manter a proporção */
+    object-fit: cover; /* Corta a imagem para preencher o contêiner sem distorção */
+    border-radius: 15px; /* Bordas arredondadas */
+}
+
+.declaration {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px; /* Aumentando o tamanho da fonte */
+    color: #FF69B4; /* Rosa */
+}
+
+.countdown {
+    background-color: rgba(255, 105, 180, 0.8); /* Fundo rosa suave */
+    border-radius: 15px; /* Bordas arredondadas */
+    padding: 15px; /* Aumentando o espaçamento interno */
+    margin-top: 20px;
+    color: #fff; /* Texto branco */
+    text-align: center; /* Centraliza o texto */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra ao redor da contagem */
+    max-width: 100%; /* Aumentando a largura máxima para a caixa */
+    margin-left: auto; /* Centraliza a caixa horizontalmente */
+    margin-right: auto; /* Centraliza a caixa horizontalmente */
+}
+
+/* Media queries para responsividade */
+@media (max-width: 600px) {
+    .declaration {
+        font-size: 20px; /* Tamanho da fonte menor em telas pequenas */
+    }
+
+    .countdown {
+        font-size: 16px; /* Tamanho da fonte menor em telas pequenas */
+    }
+}

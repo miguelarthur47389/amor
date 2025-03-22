@@ -1,0 +1,24 @@
+html,
+body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background: #000;
+    display: flex; /* Usar flexbox para centralizar */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+canvas {
+    display: block; /* Remove o espaço em branco abaixo do canvas */
+    width: 100%; /* Largura total do canvas */
+    height: auto; /* Altura automática para manter a proporção */
+}
+
+/* Media queries para responsividade */
+@media (max-width: 600px) {
+    canvas {
+        max-width: 100%; /* O canvas ocupa 100% da largura em telas menores */
+        max-height: 100%; /* O canvas ocupa 100% da altura em telas menores */
+    }
+}
